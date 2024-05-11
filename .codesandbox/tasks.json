@@ -1,0 +1,45 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "npm install && cd client && npm install && npm run build",
+      "command": "npm install && cd client && npm install && npm run build"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "test": {
+      "name": "test",
+      "command": "yarn test"
+    },
+    "start:server": {
+      "name": "start:server",
+      "command": "yarn start:server"
+    },
+    "start:client": {
+      "name": "start:client",
+      "command": "yarn start:client"
+    },
+    "start": {
+      "name": "start",
+      "command": "yarn start",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build"
+    },
+    "n": {
+      "name": "n",
+      "command": "npm start",
+      "runAtStart": true,
+      "preview": {
+        "port": 9480
+      }
+    }
+  }
+}
